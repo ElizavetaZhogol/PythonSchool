@@ -7,7 +7,7 @@ korkeus = int(input('Anna suorakulmion korkeus: '))
 piiri = 2*(kanta + korkeus)
 pintaAla = kanta*korkeus
 
-print("Suorakulmion kanta on: ", kanta, "\n"
+print("\nSuorakulmion kanta on: ", kanta, "\n"
       "Suorakulmion korkeus on: ", korkeus, "\n"
-      "Suorakulmion piiri on: ", piiri, "\n" +
+      "Suorakulmion piiri on: ", piiri, "\n"
       "Suorakulmion pinta-ala on: ", pintaAla)
