@@ -4,24 +4,21 @@
 
 luvut = []
 
-luku = int(input('Anna luku: '))
-print(luku)
+data = input('Anna luku: ')
 
+while data != "":
+   if data.isdigit() == True:
+    luku = int(data)
+    luvut.insert(0, luku)
+    print(luvut) 
+    data = input('Anna luku: ')
+   else:
+    print("Try again") 
+    data = input('Anna luku: ')
+print("The ptogramm has ended")
 
+pieni = min(luvut)
+suuri = max(luvut)
 
-while type(luku) == int:
-    luvut.insert(1, luku)
-    print(luvut)
-    luku = int(input('Anna luku: '))
-    if luku == "":
-      print("Error")
-      break
-else:
-    print("invalid input")
-#     if luku == "":
-#         print("Error")
-#         break
-#     luku = int(input('Anna luku: '))
-# else:
-#     print("wrong input")
-
+print("Pienin antamasi luku: ", pieni)
+print("Suurin antamasi luku ", suuri)
