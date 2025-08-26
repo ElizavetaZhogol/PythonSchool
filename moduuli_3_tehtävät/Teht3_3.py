@@ -21,6 +21,7 @@ if sukupuoli == "nainen":
     elif hemoglobiiniarvo > 175:
         print("Hemoglobiiniarvosi on korkea.\n"
               "Naisen normaali hemoglobiiniarvo on välillä 117-175 g/l.\n")
+        
 elif sukupuoli == "mies":
 
     print("\nOlet " + sukupuoli + ".\n"
