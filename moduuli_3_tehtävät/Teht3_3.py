@@ -4,13 +4,14 @@
 # Naisen normaali hemoglobiiniarvo on välillä 117-175 g/l.
 # Miehen normaali hemoglobiiniarvo on välillä 134-195 g/l.
 
-sukupuoli = input('\nOletko mies vai nainen? Kirjoita vastauksesi tähän: ')
+sukupuoli = input('\nMikä on biologinen sukupuolisi? Kirjoita vastauksesi tähän: ')
 hemoglobiiniarvo = int(input("Mikä on hemoglobiiniarvosi? Kirjoita tähän: "))
 
-print("\nOlet " + sukupuoli + ".\n"
+if sukupuoli == "nainen":
+
+    print("\nOlet " + sukupuoli + ".\n"
       "Hemoglobiiniarvosi on", hemoglobiiniarvo, ".\n")
 
-if sukupuoli == "nainen":
     if hemoglobiiniarvo < 117:
         print("Hemoglobiiniarvosi on alhainen.\n"
               "Naisen normaali hemoglobiiniarvo on välillä 117-175 g/l.\n")
@@ -21,6 +22,10 @@ if sukupuoli == "nainen":
         print("Hemoglobiiniarvosi on korkea.\n"
               "Naisen normaali hemoglobiiniarvo on välillä 117-175 g/l.\n")
 elif sukupuoli == "mies":
+
+    print("\nOlet " + sukupuoli + ".\n"
+      "Hemoglobiiniarvosi on", hemoglobiiniarvo, ".\n")
+
     if hemoglobiiniarvo < 134:
         print("Hemoglobiiniarvosi on alhainen.\n"
               "Miehen normaali hemoglobiiniarvo on välillä 134-195 g/l.\n")
