@@ -23,26 +23,25 @@
 
 import random
 
-N = int(input("How many points do you eant to inspect: "))
+N = int(input("Kuinka monta pisteitä haluat ottaa huomioon?: "))
 n = 0
 
-Ntries = N
+yritN = N
 
-while Ntries > 0:
+while yritN > 0:
 
     arvoY = random.uniform(-1, 1)
     arvoX = random.uniform(-1, 1)
 
-    lineLength = arvoX**2 + arvoY**2
-    if  lineLength <= 1:
+    pituus = arvoX**2 + arvoY**2
+    if  pituus <= 1:
         n = n + 1
     else:
         n = n
 
-    Ntries = Ntries - 1  
+    yritN = yritN - 1  
 
 pi = (4*n)/N
 
-print(N)
-print(n)
-print(pi)
+print("\n", n ,"pistettä", N ,":sta kuuluu ympyrään")
+print("Pi:n likimääräinen arvo on", pi)
