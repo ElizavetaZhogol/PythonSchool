@@ -1,7 +1,0 @@
-ika = int(input('Ilmoitathan ikäsi: '))
-
-if ika >= 18:
-    print("Suomessa saat ajaa autolla")
-else:
-    ikaPuutu = 18 - ika
-    print("Olet liian nuori ajamaan autoa. Odota vielä", ikaPuutu, "vuotta")    

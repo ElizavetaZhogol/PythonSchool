@@ -2,20 +2,22 @@
 # kunnes tämä syöttää tyhjän merkkijonon lopetusmerkiksi.
 # Lopuksi ohjelma tulostaa saaduista luvuista pienimmän ja suurimman.
 
+# Yritin tässä kirjoittaa ohjelman, joka ei pysähdy virheellisen arvon syöttämisen vuoksi.
+# Koska ohjelman pitäisi pysähtyä vain, kun käyttäjä ei ole syöttänyt mitään.
+
 luvut = []
 
 data = input('Anna luku: ')
 
 while data != "":
-   if data.isdigit() == True:
+   try:
     luku = int(data)
     luvut.insert(0, luku)
     print(luvut) 
-    data = input('Anna luku: ')
-   else:
-    print("Try again") 
-    data = input('Anna luku: ')
-print("The ptogramm has ended")
+   except ValueError:
+    print("Yritä uudelleen") 
+   data = input('Anna luku: ')
+print("Ohjelma on ohi")
 
 pieni = min(luvut)
 suuri = max(luvut)
