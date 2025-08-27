@@ -6,7 +6,7 @@ print ("\nTämä ohjelma muuntaa tuumat senttimetreiksi.\n"
 
 tuumia = float(input('\nAnna arvo tuumina: '))
 
-while tuumia > 0:
+while tuumia >= 0:
     senttimetria = tuumia * 2.54
     print(tuumia, "tuuma = ", senttimetria, "cm")
     tuumia = float(input('\nAnna arvo tuumina: '))
