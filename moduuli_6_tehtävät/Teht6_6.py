@@ -7,7 +7,7 @@
 def yksikkoHinta(halkaisija, hinta):
     sade = halkaisija/2
     pintaAla = 3.14*sade**2
-    pintaAlaMetri = pintaAla/1000
+    pintaAlaMetri = pintaAla/10000
     hintaPerNeliometri = hinta/pintaAlaMetri
     return hintaPerNeliometri
 
