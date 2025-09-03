@@ -6,7 +6,7 @@
 # Yksi gallona on 3,785 litraa.
 
 def bensiiniLitra(gallonat):
-    litra = gallonat*3.784
+    litra = gallonat*3.785
     return litra
 
 print("Haluatko tietää, kuinka monta litraa bensiiniä on varastossa gallonoina?")
