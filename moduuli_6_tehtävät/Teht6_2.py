@@ -5,13 +5,13 @@
 
 import random
 
-tahko = int(input('\nIlmoita noppasi tahkojen yhteismäärä: '))
-
-print("\nKuinka monta nopanheittoa tarvitaan, jotta saadaan luku",tahko,"?\n")
-
 def noppa(tahkot):
     arvo = random.randint(1, tahkot)
     return arvo
+
+tahko = int(input('\nIlmoita noppasi tahkojen yhteismäärä: '))
+
+print("\nKuinka monta nopanheittoa tarvitaan, jotta saadaan",tahko,"?\n")
 
 luku = noppa(tahko)
 
