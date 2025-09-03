@@ -4,12 +4,20 @@
 # Esimerkiksi luku 13 on alkuluku, koska se voidaan jakaa vain luvuilla 1 ja 13 siten, että jako menee tasan.
 # Toisaalta esimerkiksi luku 21 ei ole alkuluku, koska se voidaan jakaa tasan myös luvulla 3 tai luvulla 7.
 
-luvut = []
+luvut = int(input('Anna kokonaisluku: '))
 
-luku = int(input('Anna kokonaisluku: '))
+vastaus = "on alkuluku"
 
-if luku == 2 or luku == 3 or luku == 5:
-    print(luku, "on alkuluku!")
+for luku in range(2, luvut):
+    arvo = luvut % luku
+    print(arvo)
+    if arvo == 0:
+        vastaus = "ei ole alkuluku"
+        break
+
+if luvut == 0 or luvut == 1:
+    print(luvut, "ei ole alkuluku")
+elif luvut < 0:
+    print("Anna positiivinen luku")
 else:
-    if luku % 2 == 0 or luku % 3 == 0 or luku % 5 == 0:
-        print("luku ei ole alkuluku")
+    print(luvut, vastaus)
