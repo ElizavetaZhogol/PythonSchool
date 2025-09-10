@@ -30,11 +30,8 @@ while luku != 3:
             print(icao + " ICAO:n määräysten mukainen lentoasema on " + lentoasemat[icao])
         else:
             print("Listalla ei ole sellaista lentoasemaa.")
-            
+
     else:
         print("Ei ole sellaista vaihtoehtoa. Yritä uudelleen.")
 
     luku = int(input('Syötä valintasi 1, 2 tai 3: '))
-
-for icao in lentoasemat:
-    print(icao + " on " + lentoasemat[icao])
