@@ -16,7 +16,7 @@ class Auto:
 
         muutos = self.nopeus + nopeudenMuutos
 
-        if 0 < muutos <= self.huippunopeus:
+        if 0 <= muutos <= self.huippunopeus:
 
            self.nopeus = muutos 
         
