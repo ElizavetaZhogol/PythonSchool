@@ -8,12 +8,12 @@ class Auto:
     def __init__(self, rekisteritunnus, huippunopeus):
         self.rekisteritunnus = rekisteritunnus
         self.huippunopeus = huippunopeus
-        self.hetkinenNopeus = 0
-        self.kuljettuMatka = 0
+        self.nopeus = 0
+        self.matka = 0
 
 auto = Auto("ABC-123", "142 km/h")
 
 print(f"\nAuton rekisteritunnus on {auto.rekisteritunnus:s}." )
 print(f"\nAuton huippunopeus on {auto.huippunopeus:s}.")
-print(f"\nAuton tämänhetkinen nopeus on {auto.hetkinenNopeus:d} km/h.")
-print(f"\nAuton kuljettu matka on {auto.kuljettuMatka:d} km.\n")
+print(f"\nAuton tämänhetkinen nopeus on {auto.nopeus:d} km/h.")
+print(f"\nAuton kuljettu matka on {auto.matka:d} km.\n")
