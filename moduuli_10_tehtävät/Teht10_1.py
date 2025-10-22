@@ -29,7 +29,7 @@ class Hissi:
 
         else:
 
-            print("Et voi mennä tähän kerrokseen.")
+            print(f"Et voi mennä kerrokseen {siiry_kerros}.")
 
 
     def kerros_ylös(self):
