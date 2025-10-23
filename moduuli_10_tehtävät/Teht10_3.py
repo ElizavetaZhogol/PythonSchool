@@ -65,6 +65,8 @@ class Talo:
         return
     
     def palohälytys(self):
+
+        print("\nVaro tulta\n")
         
         for hissi in self.hissit:
 
