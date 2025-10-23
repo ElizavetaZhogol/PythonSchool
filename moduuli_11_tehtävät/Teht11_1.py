@@ -34,6 +34,10 @@ kirja = Kirja("Hytti n:o 6", "Rosa Liksom", 200)
 
 lehti = Lehti("Aku Ankka", "Aki Hyyppä")
 
+print("\n Kirja")
+
 kirja.tulosta_tiedot()
+
+print("\n Lehti")
 
 lehti.tulosta_tiedot()
