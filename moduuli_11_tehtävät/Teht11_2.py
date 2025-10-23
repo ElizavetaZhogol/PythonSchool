@@ -76,11 +76,11 @@ sähköauto.kulje(3)
 
 polttomoottoriauto.kulje(3)
 
-print("\nTulokset sähköautolle:")
+print("\n Tulokset sähköautolle:")
 
 sähköauto.tulosta_tiedot()
 
-print("\nTulokset polttomoottoriautolle:")
+print("\n Tulokset polttomoottoriautolle:")
 
 polttomoottoriauto.tulosta_tiedot()
 
