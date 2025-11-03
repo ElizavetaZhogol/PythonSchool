@@ -8,7 +8,7 @@ import requests
 
 paikkakunta = input('\nAnna paikkakunnan nimi selvittääksesi sääolosuhteet: ') 
 
-request = "https://api.openweathermap.org/data/2.5/weather?q=" + paikkakunta +"&appid=be76e954083b11eaf7a611f46924c70d"
+request = "https://api.openweathermap.org/data/2.5/weather?q=" + paikkakunta +"&************"
 
 try:
     response = requests.get(request)
